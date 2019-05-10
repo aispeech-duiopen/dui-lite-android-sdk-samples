@@ -41,20 +41,8 @@
             android:name=".LocalWakeup"
             android:label="唤醒" />
         <activity
-            android:name=".LocalSignalAndWakeup"
-            android:label="信号处理+本地唤醒" />
-        <activity
-            android:name=".LocalSignalAndWakeupAndCloudASR"
-            android:label="信号处理+本地唤醒+云端语音识别" />
-        <activity
             android:name=".LocalWakeupCustom"
             android:label="唤醒不使用内部录音机" />
-        <activity
-            android:name=".EchoAndLocalWakeupCustom"
-            android:label="自定义feed Echo+语音唤醒" />
-        <activity
-            android:name=".FdmAndLocalWakeupCustom"
-            android:label="自定义feed Fdm+语音唤醒" />
         <activity android:name=".Main">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,24 +59,8 @@
         <activity
             android:name=".LocalASR"
             android:label="本地语法编译+本地识别"></activity>
-        <activity
-            android:name=".LocalSignalAndWakeupAndVad"
-            android:label="信号处理+本地唤醒+vad" />
-        <activity
-            android:name=".LocalAsrppCustom"
-            android:label="性别识别不使用内部录音机" />
-        <activity
-            android:name=".LocalAsrpp"
-            android:label="本地性别识别"></activity>
-        <activity android:name=".VPActivityDemo" />
-        <activity android:name=".VPActivityFeedDemo" />
-        <activity android:name=".LocalSemantic" />
-        <activity android:name=".LocalAsrAndSemantic" />
         <activity android:name=".OneShotCustomFeedDemo" />
         <activity android:name=".OneShotCloudASR" />
-        <activity android:name=".LocalSignalAndWakeupAndVadAndSpeex" />
-        <activity android:name=".LocalSignalAndWakeupAndLocalASR" />
-        <activity android:name=".LocalNR"></activity>
     </application>
 
 </manifest>

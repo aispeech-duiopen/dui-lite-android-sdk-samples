@@ -122,25 +122,6 @@ public class Main extends Activity implements AdapterView.OnItemClickListener {
 
         //设置SDK录音模式
         DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_MIC);//单麦模式
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_DUAL);//线性双麦模式
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_LINE4);//线性四麦模式
-//        DUILiteSDK.setMaxVolumeMode(true);
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_CIRCLE4);//环形四麦模式
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_CIRCLE6);//环形六麦模式
-
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_ECHO);//echo模式
-//        DUILiteSDK.setEchoResName(SampleConstants.ECHO__RES);// 设置echo的资源文件
-//        DUILiteSDK.setEchoChannels(2);//音频总的通道数
-//        DUILiteSDK.setEchoMicNum(1);//真实mic数
-//        DUILiteSDK.setEchoSavedPath("/sdcard/aispeech/aecPcmFile/");//设置保存的aec原始输入和aec之后的音频文件路径
-//        DUILiteSDK.setRecChannel(1);// 默认为1,即左通道为rec录音音频,右通道为play参考音频（播放音频）若设置为2,
-//         通道会互换，即左通道为play参考音频（播放音频）,右通道为rec录音音频
-
-//        DUILiteSDK.setAudioRecorderType(DUILiteSDK.TYPE_COMMON_FDM);//fdm模式
-//        DUILiteSDK.setFdmResName(SampleConstants.FDM_RES);// 设置fdm的资源文件
-//        DUILiteSDK.setFdmSavedPath("/sdcard/aispeech/fdmPcmFile/");//设置保存的fdm原始输入和fdm之后的音频文件路径
-//        DUILiteSDK.setDefaultDriveMode(AIConstant.DRIVE_MODE_ALL);//设置fdm的默认驾驶模式,可选为全模式(AIConstant.DRIVE_MODE_ALL)
-        // 和主驾模式(DRIVE_MODE_MAIN).默认值为AIConstant.DRIVE_MODE_ALL
 
 
         DUILiteSDK.openLog();//仅输出SDK logcat日志，须在init之前调用.
