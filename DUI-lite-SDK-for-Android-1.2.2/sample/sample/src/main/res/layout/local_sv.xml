@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/corner_round"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#CDB79E"
+                android:padding="2dp"
+                android:text="训练"
+                android:textColor="#030303"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/trainusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="user1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/corner_round"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="密码:"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/button_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="录音" />
+
+                <ProgressBar
+                    android:id="@+id/trainBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="113dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+
+                <Button
+                    android:id="@+id/update"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="确认提交" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/corner_round"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#CDB79E"
+                android:padding="2dp"
+                android:text="检验"
+                android:textColor="#030303"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/detectRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/radio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="校验特定用户" />
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="在已有用户中检索" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/checkusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="填写待校验用户名"
+                android:text="user1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认证密码:"
+                    android:textColor="#ffffff" />
+
+                <Button
+                    android:id="@+id/check_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="录音" />
+
+                <ProgressBar
+                    android:id="@+id/checkBar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="安全度阈值："
+                    android:textColor="#ffffff" />
+
+                <SeekBar
+                    android:id="@+id/threshvalBar"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:max="20"
+                    android:progress="5" />
+
+                <TextView
+                    android:id="@+id/threshvalLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+、
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/corner_round"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/stateLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="状态"
+                android:textColor="#A0522D" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

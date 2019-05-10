@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.aispeech.sample"
+        minSdkVersion 14
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file('../keystore/sample.jks')
+            storePassword 'aispeech'
+            keyAlias 'aispeech'
+            keyPassword 'aispeech'
+        }
+        debug {
+            storeFile file('../keystore/debug.keystore')
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile "com.android.support:support-v4:24.2.1"
+    compile "com.android.support:support-v13:24.2.1"
+    compile 'com.android.support:design:24.2.1'
+    //dui lite sdk依赖于okhttp,okio，必须外部依赖或导入，否则报错
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.squareup.okio:okio:1.13.0'
+
+
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<activityList>
+    <label name="LocalWakeup">语音唤醒</label>
+    <label name="LocalWakeupCustom">自定义feed+语音唤醒</label>
+    <label name="LocalASR">本地语法编译+本地识别</label>
+    <label name="CloudASR">云端语音识别</label>
+    <label name="CloudASRMultiResult">云端识别实时反馈</label>
+    <label name="CloudASRCustomBatch">自定义feed+云端识别</label>
+    <label name="CloudTTS">云端TTS合成</label>
+    <label name="LocalTTS">本地TTS合成</label>
+    <label name="OneShotCloudASR">oneshot demo</label>
+    <label name="OneShotCustomFeedDemo">oneshot cloud feed demo</label>
+</activityList>

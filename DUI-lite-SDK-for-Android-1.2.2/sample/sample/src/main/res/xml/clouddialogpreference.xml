@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    
+    <PreferenceCategory android:title="语义设置项" >
+        <EditTextPreference
+            android:dialogTitle="SERVER"
+            android:key="server"
+            android:summary="设置服务器地址如:http://s.api.aispeech.com/bayes"
+            android:title="服务器地址设置"
+            android:defaultValue="@string/default_dialog_server"/>
+        <EditTextPreference
+            android:dialogTitle="RES"
+            android:key="res"
+            android:summary="资源设置如:robot"
+            android:title="请求资源设置" 
+            android:defaultValue="@string/default_dialog_res"/>
+    </PreferenceCategory>
+   
+
+</PreferenceScreen>
