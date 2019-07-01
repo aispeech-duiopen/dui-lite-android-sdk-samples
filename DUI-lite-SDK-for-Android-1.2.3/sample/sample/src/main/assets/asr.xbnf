@@ -1,0 +1,20 @@
+$DEVICE_ITEM=(蓝牙 | WIFI | 设置 | 飞行模式 | 静音模式 | HUAWEI Metabook);
+$OPEN=(打开|关闭) $DEVICE_ITEM;
+
+$SEARCH_ITEM=(电影院 | 餐厅 | 运动场 | 博物馆 );
+$SEARCH=[帮我] 查一下 $SEARCH_ITEM;
+
+$SINGER=(周杰伦 | 李健 | 张惠妹|Passenger|Jay|Justin Bieber|tfboys|Lady Gaga)/k="singer"/;
+$MUSIC=(one time|let her go|my love|Friends|Sorry|夜曲|A B C D|poker face|baby)/k="song"/;
+
+$CMD=[我想听|来一首] (($SINGER 的歌)|($SINGER 的 $MUSIC)|($MUSIC));
+
+$CONTACTS=(张三 | 李四|ABC)/k="contacts"/;
+$CALL=[帮我] (打电话|发短信) 给 ($CONTACTS);
+
+$LOC=(钟南街 | 长河路 | 故宫博物院|A T M|The Pentagon)/k="place"/;
+$NAVI=[帮我] 导航到 ($LOC);
+
+
+$CMD_EXCUTE= ($OPEN | $SEARCH | $NAVI | $CALL | $CMD );
+( \<s\> ( $CMD_EXCUTE ) \<\/s\> )
